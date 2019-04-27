@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body class=bg-light>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!--
 
@@ -21,6 +22,10 @@
 
     -->
     <script src="js/index.js"></script>
+    <div class="jumbotron jumbotron-fluid">
+    
+    <div class="container text-center">
+        
     <div>
     <h1 id="title">Survey Form</h1>
     <p id="description">Let us know how we can improve freeCodeCamp</p>
@@ -36,7 +41,7 @@
     <div>
       <label for="role">Which option best describes your current role?</label>
       <select name="role" id="">
-        <option value="Please select">Please select</option>
+        <option value="Please select" disabled selected>Please select</option>
         <option value="student">Student</option>
         <option value="full-time-job">Full Time Job</option>
         <option value="full-time-learner">Full Time Learner</option>
@@ -45,36 +50,44 @@
       </select>
     </div>
     <div>
-      <label for="radio">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-      <input type="radio" name="radio" id="radio" value="Definitely">Definitely<br>
-      <input type="radio" name="radio" id="radio" value="Maybe">Maybe<br>
-      <input type="radio" name="radio" id="radio" value="Not sure">Not sure<br>
+      <label for="radio">* How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+      <input type="radio" name="radio" id="radio" value="Definitely"> Definitely<br>
+      <input type="radio" name="radio" id="radio" value="Maybe"> Maybe<br>
+      <input type="radio" name="radio" id="radio" value="Not sure"> Not sure<br>
     </div>
     <div>
       <label for="like">What do you like most in FCC:</label>
-      <select name="like" id="like">
+      <select name="like" id="dropdown">
+        <option value="Please select" disabled selected>Please select</option>
         <option value="Challenges">Challenges</option>
         <option value="Projects">FProjects</option>
         <option value="Community">Community</option>
         <option value="Open source">Open source</option>
       </select>
     </div>
+    
+    
     <div>
+          
       <label for="checkbox">Things that should be improved in the future
 (Check all that apply)</label><br>
-      <input type="checkbox" id="checkbox" name="improvements" value="Front-end Projects">Front-end Projects<br>
-      <input type="checkbox" id="checkbox" name="improvements" value="Back-end Projects">Back-end Projects<br>
-      <input type="checkbox" id="checkbox" name="improvements" value="Data visualization">"Data visualization<br>
-      <input type="checkbox" id="checkbox" name="improvements" value="Challenges">Challenges<br>
-      <input type="checkbox" id="checkbox" name="improvements" value="Open Source Community">Open Source Community<br>
-      <input type="checkbox" name="improvements" value="Videos">improvements<br>
+      <input type="checkbox" id="checkbox" name="improvements" value="Front-end Projects" > Front-end Projects<br>
+      <input type="checkbox" id="checkbox" name="improvements" value="Back-end Projects"> Back-end Projects<br>
+      <input type="checkbox" id="checkbox" name="improvements" value="Data visualization"> Data visualization<br>
+      <input type="checkbox" id="checkbox" name="improvements" value="Challenges"> Challenges<br>
+      <input type="checkbox" id="checkbox" name="improvements" value="Open Source Community"> Open Source Community<br>
+      <input type="checkbox" name="improvements" value="Videos"> Improvements<br>
     </div>
     <label for="comment">Comments</label>
     <textarea placeholder="Enter your comment here" rows="3" cols="50" id="comment"></textarea><br>
-    <button id="submit">Submit</button>
+    <button id="submit" class="btn btn-primary">Submit</button>
     <div>
       
     </div>
     </form>
+
+  </div>
+
+</div>
   </body>
 </html>
